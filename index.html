@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -33,7 +35,7 @@
   <main>
       <div class="container">
           <div class="main-content">
-              <div class="content">
+              <div class="content animated fadeInRight">
                   <span class="genre">2019, фэнтези</span>
                   <div class="rating">
                       <div class="rating-stars">
@@ -50,13 +52,13 @@
                       </div>
                       <div class="rating-numbers">7/10</div>
                   </div>
-                  <div class="main-title">Ведьмак</div>
+                  <h1 class="main-title">Ведьмак</h1>
                   <p class="main-description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. </p>
-                  <button class="button">Смотреть онлайн</button>
+                  <a data-fancybox href="https://www.youtube.com/watch?v=mlO1YaqXLqw" class="button">Смотреть трейлер</a>
               </div>
-              <button class="play">
+              <a data-fancybox href="https://www.youtube.com/watch?v=mlO1YaqXLqw" class="play">
                   <img src="./img/play.svg" alt="play" class="play-img">
-              </button>
+              </a>
           </div>
 
           <div class="series">
@@ -141,5 +143,7 @@
   </footer>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>

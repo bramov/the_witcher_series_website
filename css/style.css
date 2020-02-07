@@ -57,6 +57,7 @@ body {
     line-height: 16px;
     margin-bottom: 16px;
     display: block;
+    animation-delay: 2s;
 }
 
 .rating {
@@ -88,6 +89,13 @@ body {
     color: #fff;
     border: none;
     padding: 22px 72px;
+    text-decoration: none;
+}
+.button:active {
+    color: #fff;
+}
+.button:hover {
+    background-color: #8b2222;
 }
 .main-content {
     display: flex;
@@ -96,6 +104,9 @@ body {
 }
 
 .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #9D2929;
     width: 100px;
     height: 100px;
@@ -119,6 +130,7 @@ body {
     border-radius: 50%;
     left: -16px;
     top: -16px;
+    animation: pulse 0.5s ease-in-out 0.5s infinite;
 }
 
 .series {
@@ -305,17 +317,21 @@ body {
     }
     .menu-button-active {
         height: 0;
+        z-index: 2;
     }
     .menu-button-active:before {
         transform: rotate(45deg);
         margin-top: 0;
+        z-index: 2;
     }
     .menu-button-active:after {
         transform: rotate(-45deg);
         margin-top: 0;
+        z-index: 2;
     }
     .header {
         display: none;
+        z-index: 1;
         flex-direction: column;
         position: absolute;
         right: 0;
